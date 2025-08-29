@@ -9,7 +9,7 @@ function App() {
       <h1>Title</h1>
       <div className="dropdown">
         <button className="dropbtn" onClick={() => setOpen(!open)}>
-          Choose your font
+          <b>Choose your font</b>
         </button>
         {open && (
           <div className="dropdown-content">
