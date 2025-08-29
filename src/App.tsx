@@ -14,6 +14,7 @@ function App() {
         {open && (
           <div className="dropdown-content">
             <a href="#">Open Dyslexic</a>
+            <br />
             <a href="#">Arial</a>
           </div>
         )}
