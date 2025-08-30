@@ -5,7 +5,6 @@ import useFont from "./useFont";
 function App() {
     const [open, setOpen] = useState(false);
 
-    // Load the OpenDyslexic font into the popup
     useFont();
 
     const fontChange = (fontName: string) => {
@@ -37,12 +36,10 @@ function App() {
             <h1>Welcome to FontShift</h1>
 
             <div className="dropdown">
-                {/* Dropdown trigger button (same size as option buttons) */}
                 <button className="button-21" onClick={() => setOpen(!open)}>
                     Choose your font
                 </button>
 
-                {/* Dropdown options */}
                 {open && (
                     <div className="dropdown-content">
                         <button
