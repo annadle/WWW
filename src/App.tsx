@@ -20,7 +20,7 @@ function App() {
             chrome.scripting.executeScript(
                 {
                     target: { tabId: tab.id },
-                    files: ["content.js"], // Must be present in /dist
+                    files: ["content.js"], // Must exist in /dist
                 },
                 () => {
                     chrome.tabs.sendMessage(tab.id!, {
@@ -33,32 +33,35 @@ function App() {
     };
 
     return (
-        <div>
+        <div id="root">
             <h1>Welcome to FontShift</h1>
+
             <div className="dropdown">
-                <button className="dropbtn" onClick={() => setOpen(!open)}>
+                {/* Dropdown trigger button (same size as option buttons) */}
+                <button className="button-21" onClick={() => setOpen(!open)}>
                     Choose your font
                 </button>
+
+                {/* Dropdown options */}
                 {open && (
                     <div className="dropdown-content">
                         <button
+                            className="button-21"
                             onClick={() => fontChange("open-dyslexic")}
-                            style={{
-                                fontFamily: "OpenDyslexic, sans-serif",
-                                fontSize: "14px",
-                            }}
+                            style={{ fontFamily: "OpenDyslexic, sans-serif" }}
                         >
                             Open Dyslexic
                         </button>
                         <button
+                            className="button-21"
                             onClick={() => fontChange("arial")}
-                            style={{ fontFamily: "Arial, sans-serif", fontSize: "20px" }}
+                            style={{ fontFamily: "Arial, sans-serif" }}
                         >
                             Arial
                         </button>
                         <button
+                            className="button-21"
                             onClick={() => fontChange("default")}
-                            style={{ fontSize: "19px" }}
                         >
                             Default
                         </button>
