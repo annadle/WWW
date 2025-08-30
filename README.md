@@ -4,7 +4,13 @@ Group name: WWW
 
 Group members: Anna Le, Sarah Wan, Kylie Lam
 
-The program is meant to aid people with dyslexia and provide them with an option to switch a website's font to one that is easier to read.
+The program is meant to aid people with dyslexia and provide them with an option to switch a website's font to one that is more dyslexia-friendly.
+
+## Features
+* UI passes web accessibility checks
+* User is able to select their preferred dyslexia-friendly font
+* Users can turn revert font changes back to default
+* UI has been implemented with larger font sizes to ensure accessibility for the user
 
 ## Build
 In terminal, do ```npm run build```. This will give you a ```dist``` folder to use.
