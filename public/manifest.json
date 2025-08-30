@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "My Vite Extension",
+  "name": "FontShift",
   "version": "1.0.0",
   "action": {
     "default_popup": "index.html"
@@ -11,5 +11,14 @@
   "host_permissions": [
     "http://*/*",
     "https://*/*"
-  ]
+  ],
+    "icons": {
+      "48": "images/Icon48.png",
+      "128": "images/Icon128.png",
+      "32": "images/Icon32.png",
+      "24": "images/Icon24.png",
+      "16": "images/Icon16.png",
+      "38": "images/Icon38.png",
+      "19": "images/Icon19.png"
+  }
 }
