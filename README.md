@@ -25,9 +25,10 @@ In terminal, do `npm install`, then `npm run build`. This will give you a `dist`
 4. Press "Load Unpacked" in the top left. You may need to toggle the "Developer mode" switch in the top right first.
 5. Select the dist folder you have just created.
 6. If you have previously loaded an older version of the project, press the `reload` button where the extension is listed.
-7. Go to the Extensions button in your toolbar located in the top right.
-8. Select "FontShift".
-9. Choose your font.
+7. Go to a webpage of your choice.
+8. Go to the Extensions button in your toolbar located in the top right.
+9. Select "FontShift".
+10. Choose your font.
 
 ## Technologies Used
 
