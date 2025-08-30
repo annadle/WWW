@@ -1,69 +1,34 @@
-# React + TypeScript + Vite
+# FontShift
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Group name: WWW
 
-Currently, two official plugins are available:
+Group members: Anna Le, Sarah Wan, Kylie Lam
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The program is meant to aid people with dyslexia and provide them with an option to switch a website's font to one that is easier to read.
 
-## Expanding the ESLint configuration
+## Build
+In terminal, do ```npm run build```. This will give you a ```dist``` folder to use.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Usage
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+1. Go to Chrome. 
+2. Go to extensions. 
+3. Go to manage extensions
+4. Press "Load Unpacked" in the top left. 
+5. Select the dist folder you have just created.
+6. If you have previously loaded the project, press the ```reload``` button where the extension is listed.
+7. Go to the extensions button in your toolbar located in the top right.
+8. Select "FontShift".
+9. Choose your font.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Technologies used
+* CSS
+* HTML
+* JavaScript
+* React with TypeScript
+* Vite
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Acknowledgements
+We acknowledge the WIT team for running the Hackathon, proving food, and providing help.
