@@ -4,16 +4,16 @@ Group name: WWW
 
 Group members: Anna Le, Sarah Wan, Kylie Lam
 
-The program is meant to aid people with dyslexia and provide them with an option to switch a website's font to one that is more dyslexia-friendly.
+FontShift is a Chrome extension intended to aid people with dyslexia and provide them with an option to switch a website's font to one that is more dyslexia-friendly.
 
 ## Features
-* UI passes web accessibility checks
+* UI design passes web accessibility checks
 * User is able to select their preferred dyslexia-friendly font
-* Users can turn revert font changes back to default
+* Users can turn revert font changes back to website default
 * UI has been implemented with larger font sizes to ensure accessibility for the user
 
 ## Build
-In terminal, do ```npm run build```. This will give you a ```dist``` folder to use.
+In terminal, do ```npm install```, then ```npm run build```. This will give you a ```dist``` folder to load in Chrome.
 
 
 ## Usage
@@ -23,7 +23,7 @@ In terminal, do ```npm run build```. This will give you a ```dist``` folder to u
 3. Go to "Manage Extensions".
 4. Press "Load Unpacked" in the top left. 
 5. Select the dist folder you have just created.
-6. If you have previously loaded the project, press the ```reload``` button where the extension is listed.
+6. If you have previously loaded a previous version of the project, press the ```reload``` button where the extension is listed.
 7. Go to the Extensions button in your toolbar located in the top right.
 8. Select "FontShift".
 9. Choose your font.
@@ -35,6 +35,7 @@ In terminal, do ```npm run build```. This will give you a ```dist``` folder to u
 * JavaScript
 * React with TypeScript
 * Vite
+* Chrome Extension API
 
 ## Acknowledgements
-We acknowledge the WIT team for running the Hackathon, providing food, and providing help. We acknowledge https://getcssscan.com/css-buttons-examples for their button templates.
+We acknowledge the WIT team for running the Hackathon, providing food, and providing help. We also acknowledge [CSS Scan](https://getcssscan.com/css-buttons-examples) for their button templates. Lastly, we acknowledge WebAIM for their [Contrast Checker Resource](https://webaim.org/resources/contrastchecker/).
