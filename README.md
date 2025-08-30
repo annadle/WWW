@@ -31,4 +31,4 @@ In terminal, do ```npm run build```. This will give you a ```dist``` folder to u
 * Vite
 
 ## Acknowledgements
-We acknowledge the WIT team for running the Hackathon, proving food, and providing help.
+We acknowledge the WIT team for running the Hackathon, providing food, and providing help.
