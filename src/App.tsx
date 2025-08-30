@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div>
-      <h1>Title</h1>
+      <h1>Welcome to FontShift</h1>
       <div className="dropdown">
         <button className="dropbtn" onClick={() => setOpen(!open)}>
           Choose your font
