@@ -46,6 +46,12 @@ function App() {
 
           </div>
         )}
+        {open && (
+          <label className="toggle-switch">
+            <input type="checkbox"/>
+            <span className="slider"></span>
+          </label>
+        )}
       </div>
     </div>
   );
