@@ -1,4 +1,3 @@
-console.log("✅ Content script loaded");
 const style = document.createElement('style');
 style.textContent = `
 @font-face {
