@@ -20,9 +20,9 @@ a {
   text-decoration: inherit;
 
 }
-/* a:hover {
+a:hover {
   color: #a0a0b3;
-*/ 
+}
 body {
   margin: 0;
   display: flex;
@@ -48,9 +48,9 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-/*button:hover {
+button:hover {
   border-color: #8EABC5;
-} */
+}
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
