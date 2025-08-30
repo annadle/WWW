@@ -4,34 +4,31 @@ import "./App.css";
 function App() {
   const [open, setOpen] = useState(false);
 
-
-  const fontChange = (fontName : string) => {
-        setOpen(false);
+  const fontChange = (fontName: string) => {
+    setOpen(false);
 
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-        const tab = tabs[0];
-        if (!tab || !tab.id) {
-            return;
-        }
+      const tab = tabs[0];
+      if (!tab || !tab.id) {
+        return;
+      }
 
-
-        chrome.scripting.executeScript(
+      chrome.scripting.executeScript(
         {
-            target: { tabId: tab.id },
-            files: ["content.js"], // Must be present in /dist
+          target: { tabId: tab.id },
+          files: ["content.js"], // Must be present in /dist
         },
         () => {
-            chrome.tabs.sendMessage(tab.id!, {
+          chrome.tabs.sendMessage(tab.id!, {
             action: "changeFont",
             font: fontName,
-        });
-            }
-        );
+          });
+        }
+      );
     });
-};
+  };
 
-
-      return (
+  return (
     <div>
       <h1>Title</h1>
       <div className="dropdown">
@@ -40,10 +37,14 @@ function App() {
         </button>
         {open && (
           <div className="dropdown-content">
-          <button onClick={() => fontChange("open-dyslexic")}>Open Dyslexic</button>
-          <button onClick={() => fontChange("arial")}>Arial</button>
-          <button onClick={() => fontChange("default")}>Default</button>
-
+            <button
+              onClick={() => fontChange("open-dyslexic")}
+              style={{ fontFamily: "OpenDyslexic, sans-serif" }}
+            >
+              Open Dyslexic
+            </button>
+            <button onClick={() => fontChange("arial")}>Arial</button>
+            <button onClick={() => fontChange("default")}>Default</button>
           </div>
         )}
       </div>
