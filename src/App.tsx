@@ -39,12 +39,18 @@ function App() {
           <div className="dropdown-content">
             <button
               onClick={() => fontChange("open-dyslexic")}
-              style={{ fontFamily: "OpenDyslexic, sans-serif", fontSize: "15px"}}
+              style={{ fontFamily: "OpenDyslexic, sans-serif", fontSize: "14px"}}
             >
               Open Dyslexic
             </button>
-            <button onClick={() => fontChange("arial")}>Arial</button>
-            <button onClick={() => fontChange("default")}>Default</button>
+            <button onClick={() => fontChange("arial")}
+              style={{ fontFamily: "Arial, sans-serif", fontSize: "20px"}}
+              >Arial
+            </button>
+            <button onClick={() => fontChange("default")}
+              style={{ fontSize: "19px"}}
+              >Default
+              </button>
           </div>
         )}
       </div>
