@@ -47,12 +47,6 @@ function App() {
             <button onClick={() => fontChange("default")}>Default</button>
           </div>
         )}
-        {open && (
-          <label className="toggle-switch">
-            <input type="checkbox"/>
-            <span className="slider"></span>
-          </label>
-        )}
       </div>
     </div>
   );
